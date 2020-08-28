@@ -1,14 +1,22 @@
 {
   "name": "nats-common-lib",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Base Types to use with Nats Streaming Library",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "André Loureiro",
+  "license": "MIT",
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^4.0.2"
+  },
   "dependencies": {
     "node-nats-streaming": "^0.3.2"
   }
