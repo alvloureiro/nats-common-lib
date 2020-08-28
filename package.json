@@ -8,16 +8,17 @@
     "build/**/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "del ./build/*",
+    "build": "yarn clean && tsc"
   },
   "keywords": [],
   "author": "André Loureiro",
   "license": "MIT",
+  "dependencies": {
+    "node-nats-streaming": "^0.3.2"
+  },
   "devDependencies": {
     "del-cli": "^3.0.1",
     "typescript": "^4.0.2"
-  },
-  "dependencies": {
-    "node-nats-streaming": "^0.3.2"
   }
 }
