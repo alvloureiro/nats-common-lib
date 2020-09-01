@@ -11,7 +11,13 @@
     "clean": "del ./build/*",
     "build": "yarn clean && tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "nats",
+    "nats-streaming",
+    "common",
+    "library",
+    "events"
+  ],
   "author": "André Loureiro",
   "license": "MIT",
   "dependencies": {
