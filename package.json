@@ -1,6 +1,6 @@
 {
   "name": "nats-common-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base Types to use with Nats Streaming Library",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
