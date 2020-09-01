@@ -11,7 +11,7 @@ export abstract class BasePublisher<K, T extends Event<K>> {
 
   publish(data: T['data']): Promise<void> {
     return new Promise((resolve, reject) => {
-      this.client.publish(this.subject, JSON.stringify(data), (err) => {
+      this.client.publish(this.subject.type, JSON.stringify(data), (err) => {
         if (err) {
           return reject(err);
         }
