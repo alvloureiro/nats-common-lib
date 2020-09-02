@@ -27,7 +27,7 @@ export abstract class BaseListener<T, K extends Event<T>> {
 
   listen() {
     const subscription = this.client.subscribe(
-      this.subject.type,
+      this.subject,
       this.queueGroupName,
       this.subscriptionOptions()
     );
